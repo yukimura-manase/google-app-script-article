@@ -64,6 +64,7 @@ function getZennArticleList(pageNumber) {
 /**
  *  NOTE: Zenn のすべての記事一覧を取得する関数
  * @returns {Array} Zenn のすべての記事一覧
+ * - 最後のページになるまで、Fetchを実行する
  */
 function getZennAllArticleList() {
   console.log("Zenn のすべての記事一覧を取得する・処理 Start");
@@ -196,14 +197,14 @@ function writeDrive(blob, folderId) {
  * NOTE: Main Function
  */
 function main() {
-  // Zenn のすべての記事一覧を取得する
+  // 1. Zenn のすべての記事一覧を取得する
   const zennAllArticleList = getZennAllArticleList();
   // console.log("Zenn のすべての記事一覧:", zennAllArticleList);
 
   if (zennAllArticleList.length > 0) {
     console.log("Zenn に記事が投稿されています");
 
-    /** Zenn のすべての記事一覧の中から必要なデータだけを抽出した Zenn の記事一覧 */
+    /** 2. Zenn のすべての記事一覧の中から必要なデータだけを抽出した Zenn の記事一覧 */
     const extractedZennArticleList = zennAllArticleList.map((element) => {
       return {
         title: element.title,
@@ -217,13 +218,13 @@ function main() {
       extractedZennArticleList
     );
 
-    /** CSV 形式の データ */
+    /** 3. CSV 形式の データ */
     const csvData = convertToCSV(extractedZennArticleList);
 
-    // CSV ファイルを Blob Object に変換する
+    // 4. CSV ファイルを Blob Object に変換する
     const blob = createBlob(csvData, FINE_NAME);
 
-    // Google Drive にファイルを書き込む
+    // 5. Google Drive に CSV ファイルを書き込む
     writeDrive(blob, FOLDER_ID);
   } else {
     console.log("Zenn に記事が投稿されていません");
