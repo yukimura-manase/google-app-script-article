@@ -1,5 +1,3 @@
-// X APIを使った OAuth2認証 & 投稿の定期実行のサンプル Ver. ハッシュタグ追加
-
 /** ツイッターのクライアント識別子 */
 const CLIENT_ID = "";
 /** ツイッターのClient Secret */
@@ -52,15 +50,12 @@ function autoTweetFromSheet() {
   /** URL */
   const link = sheet.getRange(targetRow, 2).getValue();
 
-  /** カテゴリー(ハッシュタグに使用する) */
-  const category = sheet.getRange(targetRow, 3).getValue();
-
-  /** 投稿本文を作成する Ver. ハッシュタグ追加 */
+  /** 投稿本文を作成する */
   const msg =
     `【Tech Blog おすすめ記事紹介　${todayStr}】\n` +
     `\n${title}\n` +
     `\n記事はこちら🌟\n${link}\n` +
-    `\n#${category}\n#Web開発\n#Webエンジニア\n#エンジニアと繋がりたい\n#プログラミング`;
+    `\n#Web開発\n#Webエンジニア\n#エンジニアと繋がりたい\n#プログラミング`;
 
   return msg;
 }

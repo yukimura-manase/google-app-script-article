@@ -1,0 +1,67 @@
+{
+  "articles": [
+    {
+      "id": 237226,
+      "post_type": "Article",
+      "title": "【無料】X(Twitter)にTech Blog の記事をランダムに定期・自動投稿するScriptをGASで作る！",
+      "slug": "0c48837f4c8849",
+      "comments_count": 0,
+      "liked_count": 0,
+      "body_letters_count": 9200,
+      "article_type": "tech",
+      "emoji": "🐦",
+      "is_suspending_private": false,
+      "published_at": "2024-01-21T15:18:39.222+09:00",
+      "body_updated_at": "2024-01-21T15:18:39.222+09:00",
+      "source_repo_updated_at": null,
+      "pinned": false,
+      "path": "/aiq_dev/articles/0c48837f4c8849",
+      "user": {
+        "id": 42864,
+        "username": "manase",
+        "name": "まさぴょん",
+        "avatar_small_url": "https://lh3.googleusercontent.com/a-/AOh14GhYX8r5eB8cdfa1yTA6hD1axnAibrQQzBwMDmxHuQQ=s96-c"
+      },
+      "publication": {
+        "id": 415,
+        "name": "aiq_dev",
+        "display_name": "AIQ Tech Blog (有志)",
+        "avatar_small_url": "https://res.cloudinary.com/zenn/image/fetch/s--zcjAmyH_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_50/https://storage.googleapis.com/zenn-user-upload/avatar/d936fa57c0.jpeg",
+        "pro": false,
+        "avatar_registered": true
+      }
+    },
+    {
+      "id": 234564,
+      "post_type": "Article",
+      "title": "CSS Grid Layoutの考え方と基本的な使い方や、チートシート・Exampleなどについてまとめてみた！",
+      "slug": "669bac91d6c277",
+      "comments_count": 0,
+      "liked_count": 14,
+      "body_letters_count": 16498,
+      "article_type": "tech",
+      "emoji": "📑",
+      "is_suspending_private": false,
+      "published_at": "2024-01-21T12:57:03.969+09:00",
+      "body_updated_at": "2024-01-21T12:57:03.969+09:00",
+      "source_repo_updated_at": null,
+      "pinned": false,
+      "path": "/aiq_dev/articles/669bac91d6c277",
+      "user": {
+        "id": 42864,
+        "username": "manase",
+        "name": "まさぴょん",
+        "avatar_small_url": "https://lh3.googleusercontent.com/a-/AOh14GhYX8r5eB8cdfa1yTA6hD1axnAibrQQzBwMDmxHuQQ=s96-c"
+      },
+      "publication": {
+        "id": 415,
+        "name": "aiq_dev",
+        "display_name": "AIQ Tech Blog (有志)",
+        "avatar_small_url": "https://res.cloudinary.com/zenn/image/fetch/s--zcjAmyH_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_50/https://storage.googleapis.com/zenn-user-upload/avatar/d936fa57c0.jpeg",
+        "pro": false,
+        "avatar_registered": true
+      }
+    }
+  ],
+  "next_page": 2
+}
